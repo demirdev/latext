@@ -100,7 +100,9 @@ class LaTexTState extends State<LaTexT> {
       } else {
         textBlocks.addAll([
           const TextSpan(text: '\n'),
+          const TextSpan(text: '\n'),
           ..._extractWidgetSpans(laTeXMatch.group(6)?.trim() ?? '', true),
+          const TextSpan(text: '\n'),
           const TextSpan(text: '\n')
         ]);
       }
